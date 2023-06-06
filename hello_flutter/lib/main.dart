@@ -13,6 +13,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(),
+        body: Column(
+          children: [
+            Text('hi', style: TextStyle(fontSize: 28)),
+            TextField(
+              decoration: InputDecoration(labelText: 'email'),
+            ),
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(labelText: 'password'),
+            ),
+          ],
+        ),
       ),
     );
   }
